@@ -1,3 +1,30 @@
+# Elixir workshop with Livebook
+
+## Development
+
+Livebook is primarily a Phoenix web application and can be setup as such:
+
+```shell
+git clone https://github.com/lordokami/game_livebook.git
+cd livebook
+mix dev.setup
+
+cd assets
+yarn install
+cd ..
+
+# Run the Livebook server
+mix phx.server
+
+# Run tests
+mix test
+
+# To test escript
+MIX_ENV=prod mix escript.build
+./livebook server
+```
+
+
 <h1>
   <a href="https://livebook.dev/" target="_blank">
    <img src="https://github.com/livebook-dev/livebook/raw/main/static/images/logo-with-text.png" alt="Livebook" width="400">
